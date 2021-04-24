@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<idea-plugin>
+
+    <id>it.unisa.vitrum</id>
+
+    <name>VITRuM</name>
+
+    <version>1.0</version>
+
+    <vendor url="http://www.sesa.unisa.it/" email="gianluca.dilillo@gmail.com">SESA Lab.</vendor>
+
+    -<description>
+
+    -<![CDATA[
+Plugin that calculates and visualize certain Test-Related Factors of a Java project.
+]]>
+</description>
+
+    -<change-notes>
+
+    -<![CDATA[
+Version 1.0: Initial release of the plugin.
+]]>
+</change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+
+    <idea-version since-build="173.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.htmlon how to target different products -->
+
+    <!-- uncomment to enable plugin in all products<depends>com.intellij.modules.lang</depends> -->
+
+
+    -<extensions defaultExtensionNs="com.intellij">
+
+    <!-- Add your extensions here -->
+
+</extensions>
+
+    -<actions>
+
+    <!-- Add your actions here -->
+
+
+    -<group popup="true" description="Sample desc" text="VITRuM" id="TemeviGroupedActions">
+
+    <add-to-group relative-to-action="ToolsXmlGroup" anchor="before" group-id="ToolsMenu"/>
+
+    <action text="Calculate Test Factors" id="Run" class="init.PluginInit"/>
+
+    <action text="Edit Configuration" id="Configure" class="config.PluginConfig"/>
+
+</group>
+
+</actions>
+
+</idea-plugin>
